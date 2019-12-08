@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>coffee factory</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function check()
+		{
+			var n=document.getElementById('name').value;
+			if ((document.getElementById('name').value == "") || (n.length <=1) || (!isNaN(n)))
+			{
+				alert('enter valid name !');
+				document.getElementById('name').style.borderColor = "red";
+				return false;
+			}
+			
+			if (document.getElementById('message').value == "")
+			{
+				alert('message can not be blank !');
+				document.getElementById('message').style.borderColor = "red";
+				return false;
+			}
+			alert('your message has been saved');
+		}
+	</script>
+	<div class="main">
+		<div class="logo" >
+			<img src="logo51.jpg">
+		</div>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="offer.html">Today's Offer</a></li>
+			<li><a href="about.html">About</a></li>
+			<li class="active"><a href="#">Contact us</a></li>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<form action="action.php" onsubmit="return check()" method="POST">
+		<div class="contact-form">
+			<div class="input-fields">
+				<input type="text" name="name" id="name" class="input" placeholder="name" autocomplete="off">
+			</div>
+			<div class="msg">
+				<textarea name="message" id="message" placeholder="message" ></textarea>
+				<input type="submit" name="submit" style="width:100%;">
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

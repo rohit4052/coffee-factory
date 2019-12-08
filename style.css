@@ -1,0 +1,348 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(back4.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 35px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+.main{
+  max-width: 1300px;
+  margin: 0 20px;
+  position: fixed;
+  display: block;
+  transition: top 0.8s;
+  width: 100%;
+}
+.logo img{
+  float: left;
+  margin-left: 20px;
+  width: 250px;
+  height: 150px;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation-duration: 500ms;
+  transform: translate(-50%,-50%);
+  font-style: italic;
+}
+.title h1{
+  color: #fff;
+  font-size: 90px;
+}
+.button{
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.black{
+  max-width: 1000px;
+  margin: 0 20px;
+  position: relative;
+  display: block;
+  transition: top 0.8s;
+  width: 100%;
+}
+
+
+.container{
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width : 90%;
+  height : auto;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-around;
+  flex-flow : wrap;
+}
+.box{
+  width : 350px;
+  height : 500px;
+  margin : 15px;
+  box-sizing : border-box;
+  border : 1px solid white;
+  background: rgba(0,0,0,0.7);
+}
+.para{
+  text-align : center;
+  color: #c5ecfd;
+  font-size : 14px;
+}
+.img{
+  padding: 5px 5px;
+}
+
+
+.wrapper{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 97%;
+  padding: 0 20px;
+}
+.contact-form{
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  }
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg{
+  width: 48%;
+}
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+.msg textarea{
+  height: 212px;
+}
+::-webkit-input-placeholder{
+  color: #c5ecfd;
+}
+::-moz-input-placeholder{
+  color: #c5ecfd;
+}
+::-ms-input-placeholder{
+  color: #c5ecfd;
+}
+
+
+.form{
+  max-width: 300px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  width: 98%;
+  color: #c5ecfd;
+}
+.inputs .input{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+option{
+	color:#000;
+}
+input[type=submit]{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+}
+input[type=submit]:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+
+.box1{
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height : auto;
+  width: 450px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box1 h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box1 h5{
+  font-size: 20px;
+  font-weight: 100;
+}
+.box1 p{
+  text-align: justify;
+}
+.box1 ul{
+  float: left;
+	margin-left: 64px;
+}
+.box1 li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box1 li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box1 li a:hover{
+  color: #b9b9b9;
+}
+
+
+.register{
+  padding-top: 280px;
+  padding-bottom: 0;
+}
+.newbox{
+  position : relative;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  padding : 20px;
+  width : 1200px;
+  box-sizing : border-box;
+  background : #fff;
+  border-radius : 4px;
+  box-shadow : 0 5px 15px rgba(0,0,0,0.5);
+  display : flex;
+  flex-direction: row;
+}
+.newbox1{
+  color: #c5efcd;
+  position : relative;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  padding : 20px;
+  width : 1200px;
+  box-sizing : border-box;
+  background : rgba(0,0,0,0.7);
+  border-radius : 4px;
+  box-shadow : 0 5px 15px rgba(0,0,0,0.5);
+  display : flex;
+  flex-direction: row-reverse;
+}
+.newbox .btn{
+  border: 1px solid #000;
+  padding: 10px 30px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.6s ease;
+  text-align: center;
+  cursor: pointer;
+}
+.newbox .btn:hover{
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+}
+.newbox1 .content{
+  padding-right: 20px;
+}
+.newbox .content{
+  padding-left: 20px;
+}
+.content h2{
+  margin : 0;
+  color : #ff005c;
+  font-size : 22px;
+}
+.content p{
+  margin : 0;
+  padding : 10px 0 0;
+  text-align : justify;
+}
+
+
+/*
+<script type="text/javascript">
+  $(window).on('scroll',function(){
+    if($(window).scrollTop()){
+      $('.main').addClass('black');
+    }
+    else{
+      $('.main').removeClass('black');
+    }
+  })
+</script>
+
+<script type="text/javascript">
+  var prevScrollPos=window.pageYOffset;
+  window.onscroll = function(){
+  var currentScrollPos = window.pageYOffset;
+  if(prevScrollPos > currentScrollPos)
+  {document.getElementById("main").style.top = "0";}
+  else
+  {document.getElementById("main").style.top = "-160px";}
+  prevScrollPos = currentScrollPos;
+  }
+</script>
+*/
